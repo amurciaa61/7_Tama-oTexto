@@ -8,6 +8,7 @@
         Title="Tamaño del texto"
         Height="450"
         Width="1000"
+        Icon="Imagenes/truetype.ico"
         WindowStyle="ThreeDBorderWindow">
     <Grid>
         <TextBlock x:Name="textoTextBlock"
