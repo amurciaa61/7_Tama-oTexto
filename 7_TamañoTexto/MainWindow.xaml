@@ -8,8 +8,8 @@
         Title="Tamaño del texto"
         Height="450"
         Width="1000"
-        Icon="Imagenes/truetype.ico"
-        WindowStyle="ThreeDBorderWindow">
+        Icon="Imagenes/truetype.ico">
+
     <Grid>
         <TextBlock x:Name="textoTextBlock"
                    HorizontalAlignment="Left"
@@ -30,36 +30,71 @@
         <RadioButton Tag="36"
                      Content="Pequeño"
                      HorizontalAlignment="Left"
-                     Margin="60,289,0,0"
+                     Margin="127,295,0,0"
                      VerticalAlignment="Top"
-                     Height="69"
-                     Width="228"
-                     FontSize="36"
+                     Height="60"
+                     Width="143"
+                     FontSize="12"
                      Checked="RadioButton_Checked"
                      VerticalContentAlignment="center"
-                     HorizontalContentAlignment="center" />
+                     HorizontalContentAlignment="center"
+                     RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2"
+                                    ScaleY="2" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
         <RadioButton Tag="48"
                      Content="Mediano"
                      HorizontalAlignment="Left"
-                     Margin="387,289,0,0"
+                     Margin="415,295,0,0"
                      VerticalAlignment="Top"
-                     Height="69"
-                     Width="228"
-                     FontSize="36"
+                     Height="60"
+                     Width="143"
+                     FontSize="12"
                      IsChecked="True"
                      Checked="RadioButton_Checked"
                      VerticalContentAlignment="center"
-                     HorizontalContentAlignment="center" />
+                     HorizontalContentAlignment="center"
+                     RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2"
+                                    ScaleY="2" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform X="2"
+                                        Y="2" />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
         <RadioButton Tag="72"
                      Content="Grande"
                      HorizontalAlignment="Left"
                      VerticalAlignment="Top"
-                     Height="69"
-                     Width="228"
-                     Margin="726,289,0,0"
-                     FontSize="36"
+                     Height="60"
+                     Width="143"
+                     Margin="711,295,0,0"
+                     FontSize="12"
                      Checked="RadioButton_Checked"
                      VerticalContentAlignment="center"
-                     HorizontalContentAlignment="center" />
+                     HorizontalContentAlignment="center"
+                     RenderTransformOrigin="0.5,0.5">
+            <RadioButton.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="2"
+                                    ScaleY="2" />
+                    <SkewTransform />
+                    <RotateTransform />
+                    <TranslateTransform X="2"
+                                        Y="2" />
+                </TransformGroup>
+            </RadioButton.RenderTransform>
+        </RadioButton>
     </Grid>
 </Window>
